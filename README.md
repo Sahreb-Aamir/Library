@@ -12,23 +12,28 @@ which will be increased by 1 for each subsequent instance of Book. The date will
 However, you must check if the date is valid with the isValid() method in the Date class (see page #3 below.)
 Display “Invalid Date!” if the date is invalid; otherwise, display “Programming in Java added to the
 bag.” on the console when the book is added.
-CS 213 Spring 2021 Project #1 – 45 points Dr. Lily Chang
-2
+
 • Removing a book
 R,10005
 R is a command for removing a book from the library given a book’s serial number. If the book doesn’t exist,
 display "Unable to remove, the library does not have this book."; otherwise, display
 “Book#10005 removed.”.
+
+
 • Checking out a book
 O,10005
 O is a command for checking out a book from the library. If the library doesn’t own the book, or the book has
 already been checked out, display “Book#1005 is not available.”, otherwise, display “You’ve
 checked out Book#10005. Enjoy!”.
+
+
 • Returning a book
 I,10005
 I is a command for returning a book to the library. If the book doesn’t belong to the library, or the book is not
 checked out, display "Unable to return Book#10005.”, otherwise, display “"Book#10005 return
 has completed. Thanks!"
+
+
 • Printing the library catalog
 PA //output the list of books to the console with the current sequence
 PD //output the list of books by the dates published in ascending order
