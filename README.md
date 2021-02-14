@@ -1,0 +1,36 @@
+# Library
+Implement an array-based container class Library and use it to hold the information of a list
+of books owned by a library. An instance of the Library class is a growable bag data structure with an initial capacity
+of 4, and automatically grows (increases) the capacity by 4 whenever it is full
+
+
+A,Programming in Java,11/20/2019
+A is a command for adding a book to the library, followed by the name of the book, and the date published. If the
+bag is full, the bag automatically grows the capacity by 4. A serial number will be automatically generated to create
+the book instance with the name and the date published. The serial number is a five-digit number starting 10001,
+which will be increased by 1 for each subsequent instance of Book. The date will always be in mm/dd/yyyy format.
+However, you must check if the date is valid with the isValid() method in the Date class (see page #3 below.)
+Display “Invalid Date!” if the date is invalid; otherwise, display “Programming in Java added to the
+bag.” on the console when the book is added.
+CS 213 Spring 2021 Project #1 – 45 points Dr. Lily Chang
+2
+• Removing a book
+R,10005
+R is a command for removing a book from the library given a book’s serial number. If the book doesn’t exist,
+display "Unable to remove, the library does not have this book."; otherwise, display
+“Book#10005 removed.”.
+• Checking out a book
+O,10005
+O is a command for checking out a book from the library. If the library doesn’t own the book, or the book has
+already been checked out, display “Book#1005 is not available.”, otherwise, display “You’ve
+checked out Book#10005. Enjoy!”.
+• Returning a book
+I,10005
+I is a command for returning a book to the library. If the book doesn’t belong to the library, or the book is not
+checked out, display "Unable to return Book#10005.”, otherwise, display “"Book#10005 return
+has completed. Thanks!"
+• Printing the library catalog
+PA //output the list of books to the console with the current sequence
+PD //output the list of books by the dates published in ascending order
+PN //output the list of books by the book numbers in ascending order
+• Q command will stop the program and display "Kiosk session ended."
